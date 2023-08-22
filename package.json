@@ -1,0 +1,35 @@
+{
+  "name": "lzx-resume-site",
+  "author": "lzxzz",
+  "private": true,
+  "scripts": {
+    "build": "nuxt build",
+    "dev": "nuxt dev",
+    "generate": "nuxt generate",
+    "preview": "nuxt preview",
+    "postinstall": "nuxt prepare",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix",
+    "prepare": "husky install",
+    "lint-staged": {
+      "**/*.{js,ts,vue}": [
+        "npm run lint",
+        "git add ."
+      ]
+    }
+  },
+  "devDependencies": {
+    "@antfu/eslint-config": "^0.40.2",
+    "@commitlint/cli": "^17.7.1",
+    "@commitlint/config-conventional": "^17.7.0",
+    "@nuxt/devtools": "latest",
+    "@types/node": "^18.17.3",
+    "@unocss/nuxt": "^0.55.2",
+    "commitlint": "^17.7.1",
+    "eslint": "^8.47.0",
+    "husky": "^8.0.3",
+    "lint-staged": "^14.0.1",
+    "nuxt": "^3.6.5",
+    "typescript": "^5.1.6"
+  }
+}
