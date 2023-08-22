@@ -1,7 +1,7 @@
 {
   "name": "lzx-resume-site",
-  "author": "lzxzz",
   "private": true,
+  "author": "lzxzz",
   "scripts": {
     "build": "nuxt build",
     "dev": "nuxt dev",
@@ -9,14 +9,15 @@
     "preview": "nuxt preview",
     "postinstall": "nuxt prepare",
     "lint": "eslint .",
+    "lint:script": "eslint --fix --ext .js,.ts,vue --quiet",
     "lint:fix": "eslint . --fix",
-    "prepare": "husky install",
-    "lint-staged": {
-      "**/*.{js,ts,vue}": [
-        "npm run lint",
-        "git add ."
-      ]
-    }
+    "prepare": "husky install"
+  },
+  "lint-staged": {
+    "**/*.{js,ts,vue}": [
+      "npm run lint:script",
+      "git add ."
+    ]
   },
   "devDependencies": {
     "@antfu/eslint-config": "^0.40.2",
