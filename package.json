@@ -20,6 +20,7 @@
     ]
   },
   "devDependencies": {
+    "@ant-design-vue/nuxt": "^1.1.0",
     "@antfu/eslint-config": "^0.40.2",
     "@commitlint/cli": "^17.7.1",
     "@commitlint/config-conventional": "^17.7.0",
